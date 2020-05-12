@@ -1,3 +1,25 @@
 body {
-color: black;
+    background: black;
+    }
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 25% 75%;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: 'top top top'
+                         'left mid mid';
+}
+.top{
+    grid-area: top;
+    color: white;
+}
+
+.left{
+    grid-area: left;
+    background: darkgrey;
+}
+.mid{
+    grid-area: mid;
+    background: gray;
 }
