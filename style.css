@@ -1,25 +1,112 @@
+*{
+    margin: 0;
+}
 body {
-    background: black;
+    background: darkgreen;
+    height: 100vh;
+    width: 100vh;
     }
 .container{
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-rows: 25% 75%;
-    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-areas: 'top top top'
                          'left mid mid';
 }
 .top{
     grid-area: top;
     color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .left{
     grid-area: left;
     background: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.POD{
+    width: 150px;
+    height: 50px;
+    background: yellow;
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
 }
 .mid{
     grid-area: mid;
     background: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+table, td{
+    border: black 1px solid;
+    color: coral;
+    font-size: 25px;
+    text-align: center;
+}
+th{
+    border: black 1px solid;
+    color: greenyellow;
+    font-size: 30px;
+}
+ul{
+    color: cornsilk;
+    font-size: 30px;
+}
+li{
+    display: flex;
+    align-items: space-around;
+    justify-content: space-around;
+}
+td:hover{
+    background: aquamarine;
+    transition: 0.3s;
+}
+th:hover{
+    background: aqua;
+    transition: 0.3s;
+}
+.krolik{
+    display: none;
+    position: absolute;
+    top:40px;
+    left: 0px;
+    animation: animacja 6.5s infinite;
+    transform: rotateY(180deg);
+}
+@keyframes animacja{
+    0%{
+        top:76px;
+        left: 0px;
+    }
+    49%{
+        top:76px;
+        left: 1050px;
+        transform: rotateY(180deg);
+    }
+    50%{
+        top:76px;
+        left: 1000px;
+        transform: rotateY(360deg);
+    }
+    99%{
+        top:76px;
+        left: -50px;
+        transform: rotateY(360deg);
+    }
+    100%{
+        top:76px;
+        left: 0px;
+        transform: rotateY(180deg);
+    }
 }
