@@ -1,0 +1,17 @@
+body{
+    color: aquamarine;
+}
+table, td{
+    border: black 1px solid;
+}
+tr{
+    background: grey;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: greenyellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
