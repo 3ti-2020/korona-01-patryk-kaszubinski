@@ -110,3 +110,17 @@ th:hover{
         transform: rotateY(180deg);
     }
 }
+
+.btn{
+    background: cornflowerblue;
+    position: relative;
+    top: 200px;
+    left: 100px;
+    width: 100px;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px blue;
+}
